@@ -3,18 +3,47 @@
 <form name="form" (ngSubmit)="f.form.valid && settings()" #f="ngForm" novalidate>
     <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
     />
-    <div class="form-group container">
-        <div class="row">
-            <h2 class="col-sm">Allow Notifications</h2>
-            <label class="switch col-sm">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+    <div class="form-group">
+        <h2>Allow Notifications</h2>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="soundCheck">
+        <label class="form-check-label" for="soundCheck">Sound</label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="vibrateCheck">
+        <label class="form-check-label" for="vibrateCheck">Vibrate</label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="lightCheck">
+        <label class="form-check-label" for="lightCheck">Light</label>
     </div>
     <div class="form-group">
         <h2>Nofity me when...</h2>
         <label class="switch" style="display: inlne;">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="takeBreakCheck">
+        <label class="form-check-label" for="takeBreakCheck">Time to take break</label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="endBreakCheck">
+        <label class="form-check-label" for="endBreakCheck">Time to end break</label>
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="focusTimeCheck">
+        <label class="form-check-label" for="focusTimeCheck">Time to focus</label>
+    </div>
+    <div class="form-group">
+        <h2>Sync with device</h2>
+        <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>

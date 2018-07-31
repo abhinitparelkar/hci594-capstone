@@ -25,7 +25,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'settings', component: SettingsComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'tasks', component: FetchDataComponent },
     ])
   ],
   providers: [],
