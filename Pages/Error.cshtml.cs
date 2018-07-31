@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace hci594_capstone.Pages
+namespace Neuron.Pages
 {
     public class ErrorModel : PageModel
     {

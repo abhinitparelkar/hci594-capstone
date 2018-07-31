@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "hci594_capstone"
+    "name": "Neuron"
   },
   "apps": [
     {
