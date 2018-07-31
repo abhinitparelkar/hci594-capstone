@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { SettingsComponent } from './settings/settings.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     SettingsComponent,
-    FetchDataComponent
+    TasksComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -25,7 +27,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'settings', component: SettingsComponent },
-      { path: 'tasks', component: FetchDataComponent },
+      { path: 'tasks', component: TasksComponent },
+      { path: 'add-task', component: AddTaskComponent },
     ])
   ],
   providers: [],

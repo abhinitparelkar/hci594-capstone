@@ -1,8 +1,13 @@
-<h1>Weather forecast</h1>
+<h1>Plan Your Day</h1>
+<p>Today's Motivational Quote</p>
+<p>"A goal without a plan is just a wish.”</p>
+<p>Thursday, July 26</p>
 
-<p>This component demonstrates fetching data from the server.</p>
+<h2>Today's Tasks</h2>
 
-<p *ngIf="!forecasts"><em>Loading...</em></p>
+<p *ngIf="!forecasts">
+  <em>Loading...</em>
+</p>
 
 <table class='table' *ngIf="forecasts">
   <thead>

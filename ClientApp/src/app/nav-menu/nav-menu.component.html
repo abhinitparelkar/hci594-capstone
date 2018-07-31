@@ -24,6 +24,11 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
+                        <a [routerLink]='["/add-task"]' (click)='collapse()'>
+                            <i class='fas fa-plus'></i> Add Task
+                        </a>
+                    </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/settings"]' (click)='collapse()'>
                         <span class='fas fa-cogs'></span> Settings
                     </a>
