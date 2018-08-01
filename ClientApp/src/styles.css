@@ -60,6 +60,7 @@
   }
 
   /* Global */
+  a:hover {color: #B4261B;}
   app-home .btn-primary:hover {
     background-color: #B4261B;
     border: 0;
