@@ -58,3 +58,94 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* Global */
+  app-home .btn-primary:hover {
+    background-color: #B4261B;
+    border: 0;
+  }
+
+  /* Home Styles */
+  
+  .home-logo-header {
+    background-color: #EE493B;
+    text-align: center;
+    padding: 50px 0 20px;
+    margin: 0 0 50px;
+  }
+  .home-logo-header h1 {
+    background-image: url("assets/logo.png");
+    width: 154px;
+    height: 159px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    line-height: 99999;
+  }
+ .form-group input {
+    border-bottom: 1px solid #EE493B;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 8px 0 8px 35px;
+    height: unset;
+    font-size: 1.2em;
+    color: #EE492B;
+    box-shadow: unset;
+
+    background-repeat: no-repeat;
+    background-position-x: 8px;
+    background-position-y: 14px;
+  }
+.form-group input[type="text"] {
+    background-image: url("assets/icon-email.png");
+}
+.form-group input[type="password"] {
+  background-image: url("assets/icon-password.png");
+}
+app-home .form-group label {display:none;}
+app-home .btn-primary {
+    color: #fff;
+    background-color: #EE493B;
+    width: 100%;
+    margin: 20px 0 35px;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.social-login {
+  text-align: center;
+  color: #EE493B;
+}
+.social-login a {
+  color: #EE493B;
+}
+.social-login span {
+  margin: 0 6px;
+}
+.social-login .fa-2x {
+  font-size: 1.5em;
+}
+.social-login .fa-stack {
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 2.5em;
+}
+.social-login .fa-stack-2x {
+  border: 2px solid #EE493B;
+  padding: 24px 0px;
+  border-radius: 26px;
+}
+.social-login .fa-circle:before {
+  content: unset;
+}
+app-home a.btn {
+    color: #EE493B;
+    text-align: center;
+    margin: 15px auto 30px;
+    font-size: 1.3em;
+    display: block;
+}    
