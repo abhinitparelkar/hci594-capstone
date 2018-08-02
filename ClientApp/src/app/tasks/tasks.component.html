@@ -1,29 +1,46 @@
-<h1>Plan Your Day</h1>
-<p>Today's Motivational Quote</p>
-<p>"A goal without a plan is just a wish.”</p>
-<p>Thursday, July 26</p>
 
-<h2>Today's Tasks</h2>
+<div class="content-header">
+  <h1><b>Plan</b> Your Day</h1>
+</div>
 
-<p *ngIf="!forecasts">
-  <em>Loading...</em>
-</p>
+<div class="content-container">
+  <div class="post-header-container">
+    <div class="motivational-quote">
+      <p class="title">Today's Motivational Quote</p>
+      <p class="quote">"A goal without a plan is just a wish.”</p>
+    </div>
 
-<table class='table' *ngIf="forecasts">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let forecast of forecasts">
-      <td>{{ forecast.dateFormatted }}</td>
-      <td>{{ forecast.temperatureC }}</td>
-      <td>{{ forecast.temperatureF }}</td>
-      <td>{{ forecast.summary }}</td>
-    </tr>
-  </tbody>
-</table>
+    <div class="todays-date">
+      <p>Thursday, July 26</p>
+    </div>
+  </div>
+
+  <h2 class="todays-tasks">Today's Tasks</h2>
+
+  <div class="edit-tasks">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+  </div>
+
+  <p *ngIf="!forecasts">
+    <em>Loading...</em>
+  </p>
+
+  <table class='table' *ngIf="forecasts">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Temp. (C)</th>
+        <th>Temp. (F)</th>
+        <th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let forecast of forecasts">
+        <td>{{ forecast.dateFormatted }}</td>
+        <td>{{ forecast.temperatureC }}</td>
+        <td>{{ forecast.temperatureF }}</td>
+        <td>{{ forecast.summary }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
