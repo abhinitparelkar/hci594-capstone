@@ -15,7 +15,7 @@ export class AddTaskComponent implements OnInit {
     this.nav.hide();
   }
 
-  setRam(value) {
+  setEstimatedTime(value) {
     this.estimatedTime = value;
     console.log(this.estimatedTime);
   }
