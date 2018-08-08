@@ -117,7 +117,7 @@
 li.link-active[_ngcontent-c1] a[_ngcontent-c1], 
 li.link-active[_ngcontent-c1] a[_ngcontent-c1]:hover, 
 li.link-active[_ngcontent-c1] a[_ngcontent-c1]:focus {
-  background-color: #B4261B !important;
+  background-color: #EE493B !important;
   color: white;
 }
 .navbar-collapse {padding: 0 !important;}
@@ -281,6 +281,7 @@ app-home a.btn {
   margin: 12px 0 20px 0;
   color: #999;
 }
+.edit-tasks a {color: #999;}
 .task-list {
   border-bottom: 1px solid #999;
   display: inline-block;
@@ -527,6 +528,7 @@ app-settings .btn-primary {
     position: relative;
     text-align: center;
 }
+
 .splash-screen h1 {
   color: #fff;
   text-transform: uppercase;
@@ -608,6 +610,75 @@ app-settings .btn-primary {
   left: 42%;
   right: 42%;
 }
+
+/* Current Task */
+.current-task h1 {
+  padding: 35px 0 0;
+  font-size: 22px;
+}
+.current-task {
+  color: #fff;
+  position: fixed;
+}
+.current-task span {
+  display: block;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.current-focus-time {
+  background-image: url("assets/current-task-bg.png");
+  color: #fff;
+  width: 313px;
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 44px;
+  height: 313px;
+  margin: 18% auto;
+  padding: 85px 0 0 0;
+}
+
+/* Sync Successful */
+.sync-successful-container {
+  background: #fff;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+
+  -webkit-box-shadow: 0px 0px 29px -6px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 0px 29px -6px #000;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 0px 29px -6px #000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+.sync-successful-container h1 {
+  color: #EE493B;
+  padding: 40px 0;
+}
+.sync-successful-container .fa-check {
+  font-size: 8em;
+  color: #EE493B;
+  margin: 8px 0 50px;
+}
+.sync-successful-container h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  color: #000;
+}
+.sync-successful-container .start-task-btns {
+  margin: 0 0 30px;
+  display: inline-block;
+}
+.sync-successful-container .start-task-btns i {
+  display: inline-block;
+  color: #EE493B;
+  font-size: 3.8em;
+  margin: 0 10px;
+}
+.sync-successful-container .start-task-btns i.fa-times-circle {
+  opacity: 0.8;
+}
+
 /* Mobile View */
 @media (max-width: 768px) {
   .content-container {
