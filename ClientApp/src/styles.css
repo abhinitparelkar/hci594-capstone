@@ -231,6 +231,7 @@ app-home a.btn {
   color: #fff;
   text-transform: uppercase;
   font-weight: 100;
+  font-size: 30px;
 }
 .post-header-container {
   border-bottom: 1px solid #ccc;
@@ -258,8 +259,9 @@ app-home a.btn {
   text-align: right;
 }
 .todays-date p {
-  color: #EE493B;
-  font-size: 2.4em;
+  color: #ee493b;
+  font-size: 2.0em;
+  line-height: 36px;
 }
 .todays-tasks {
   background-color: #EE493B;
@@ -337,6 +339,7 @@ app-home a.btn {
   background-color: #fff;
   border: 1px solid #EE493B;
   color: #EE493B;
+  float:right;
 }
 
 
@@ -432,9 +435,9 @@ app-settings input.form-check-input {
 }
 app-settings label.form-check-label {
   float: left;
-  font-weight: 100;
-  font-size: 1.3em;
-  color: #666;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #333;
 }
 app-settings div.form-group.sync-device {
   background-color: rgba(238,73,59, 0.12);
