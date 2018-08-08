@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": "ClientApp/dist",
+    "appService.defaultWebAppToDeploy": "/subscriptions/c832cebc-2d80-4489-b6f4-ad10f68ea51f/resourceGroups/hci594-capstone/providers/Microsoft.Web/sites/hci594-neuron"
+}
