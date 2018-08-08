@@ -27,9 +27,9 @@
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted}">
       <label for="estimatedCompletionTime">Estimated time to complete</label>
       <div class="horizontal-slidecontainer">
-        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="estimatedTime" #estimatedTime (change)="setEstimatedTime(estimatedTime.value)">
+        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="estimatedTime">
         <p>Minutes:
-          <span id="demo">{{ estimatedTime }}</span>
+          <span id="demo"></span>
         </p>
       </div>
       <div *ngIf="f.submitted" class="help-block">Estimated time is required</div>
