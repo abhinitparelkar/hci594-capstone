@@ -27,9 +27,9 @@
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted}">
       <label for="estimatedCompletionTime">Estimated time to complete</label>
       <div class="horizontal-slidecontainer">
-        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="myRange">
+        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="estimatedTime" #estimatedTime (change)="setEstimatedTime(estimatedTime.value)">
         <p>Minutes:
-          <span id="demo"></span>
+          <span id="demo">{{ estimatedTime }}</span>
         </p>
       </div>
       <div *ngIf="f.submitted" class="help-block">Estimated time is required</div>
@@ -72,6 +72,3 @@
     <button class="btn btn-primary" [routerLink]='[ "/sync-successful"]'>Add Task</button>
   </form>
 </div>
-<script>
-
-</script>
