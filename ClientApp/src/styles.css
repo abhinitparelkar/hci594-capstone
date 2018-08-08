@@ -117,7 +117,7 @@
 li.link-active[_ngcontent-c1] a[_ngcontent-c1], 
 li.link-active[_ngcontent-c1] a[_ngcontent-c1]:hover, 
 li.link-active[_ngcontent-c1] a[_ngcontent-c1]:focus {
-  background-color: transparent !important;
+  background-color: #B4261B !important;
   color: white;
 }
 .navbar-collapse {padding: 0 !important;}
@@ -219,6 +219,13 @@ app-home a.btn {
   text-align: center;
   padding: 30px 0px;
   margin: 0 0 14px;
+}
+.content-header i {
+  color: #fff;
+  float: left;
+  position: absolute;
+  top: 56px;
+  left: 24px;
 }
 .content-header h1 {
   color: #fff;
@@ -512,6 +519,9 @@ app-settings .btn-primary {
 @media (max-width: 768px) {
   .content-container {
     padding: 0 5% 0%;
+  }
+  .content-container.tasks {
+    padding: 0 0 24%;
   }
   .col-sm-9 {
     width:100% !important;
