@@ -7,9 +7,7 @@ import { NavMenuService } from '../services/nav-menu.service';
   styleUrls: ['./add-task.component.css']
 })
 export class AddTaskComponent implements OnInit {
-  constructor(public nav: NavMenuService) {
-    this.nav.hide();
-  }
+  constructor(public nav: NavMenuService) { }
 
   ngOnInit(): void {
     this.nav.hide();
