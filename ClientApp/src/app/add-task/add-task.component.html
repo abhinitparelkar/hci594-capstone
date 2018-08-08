@@ -1,13 +1,14 @@
-
 <div class="content-header">
-    <h1><b>Add</b> a Task</h1>
-  </div>
+  <h1>
+    <b>Add</b> a Task</h1>
+</div>
 
 <div class="content-container">
   <form name="form" (ngSubmit)="f.form.valid && addTask()" #f="ngForm" novalidate>
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !taskName.valid }">
       <label for="taskName">I need to...</label>
-      <input type="text" class="form-control task-name" name="taskName" [(ngModel)]="model.taskName" #taskName="ngModel" required />
+      <input type="text" class="form-control task-name" name="taskName" [(ngModel)]="model.taskName" #taskName="ngModel" required
+      />
       <div *ngIf="f.submitted && !taskName.valid" class="help-block">Task name is required</div>
     </div>
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !priorityLevel.valid }">
@@ -25,15 +26,10 @@
       <label for="estimatedCompletionTime">Estimated time to complete</label>
       <div class="horizontal-slidecontainer">
         <input type="range" min="1" max="100" value="50" class="horizontal-slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
+        <p>Value:
+          <span id="demo"></span>
+        </p>
       </div>
-      <!--<select class="form-control" id="focusTimeSelect">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>-->
       <div *ngIf="f.submitted && !estimatedCompletionTime.valid" class="help-block">Estimated time is required</div>
     </div>
     <div class="form-group">
@@ -63,15 +59,15 @@
         <span class="slider round"></span>
       </label>
     </div>
-    <button class="btn btn-primary" (click)="incrementCounter()">Add Task</button>
+    <button class="btn btn-primary">Add Task</button>
   </form>
 </div>
 <script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
-    
-    slider.oninput = function() {
-      output.innerHTML = this.value;
-    }
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function () {
+    output.innerHTML = this.value;
+  }
 </script>

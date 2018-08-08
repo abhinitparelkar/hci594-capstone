@@ -11,6 +11,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 
+import { NavMenuService } from './services/nav-menu.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
       { path: 'add-task', component: AddTaskComponent },
     ])
   ],
-  providers: [],
+  providers: [NavMenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
