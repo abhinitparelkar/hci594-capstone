@@ -11,5 +11,4 @@ export class NavMenuService {
   show() { this.isVisible = true; }
 
   toggle() { this.isVisible = !this.isVisible; }
-
 }

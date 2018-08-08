@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { NavMenuService } from '../services/nav-menu.service';
 
 @Component({
-  providers: [NavMenuService],
   selector: 'app-tasks',
   templateUrl: './tasks.component.html'
 })
@@ -16,7 +15,7 @@ export class TasksComponent implements OnInit {
     }, error => console.error(error));
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.nav.show();
   }
 }
