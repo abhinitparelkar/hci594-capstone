@@ -25,7 +25,18 @@
     <em>Loading...</em>
   </p>
 
-  <table class='table' *ngIf="forecasts">
+  <div class="task-list">
+      <div class="task-list-name">
+        <h3>Create Price Quotation</h3>
+        <span class="estimated-time">Estimated Time: 1hr</span>
+        <span class="priority-level">PRIORITY LEVEL: </span>
+      </div>
+      <div class="task-list-start-button">
+          <button class="btn btn-primary">Start Task</button>
+      </div>
+  </div>
+
+  <!--<table class='table' *ngIf="forecasts">
     <thead>
       <tr>
         <th>Date</th>
@@ -42,5 +53,5 @@
         <td>{{ forecast.summary }}</td>
       </tr>
     </tbody>
-  </table>
+  </table>-->
 </div>

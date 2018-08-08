@@ -272,6 +272,43 @@ app-home a.btn {
   margin: 12px 0 20px 0;
   color: #999;
 }
+.task-list {
+  border-bottom: 1px solid #999;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 10px;
+}
+.task-list .task-list-name {
+  width: 70%;
+  float: left;
+}
+.task-list .task-list-name h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.task-list .task-list-name .estimated-time {
+  color: #EE493B;
+  font-size: 1em;
+  margin: 5px 0 0 0;
+  display: block;
+}
+.task-list .task-list-name .priority-level {
+  color: #999;
+  display: block;
+  font-size: 0.8em;
+  margin: 5px 0 0;
+}
+.task-list .task-list-start-button {
+  width: 25%;
+  float: left;
+  margin: 14px 0 0 0;
+}
+.task-list .task-list-start-button .btn {
+  background-color: #fff;
+  border: 1px solid #EE493B;
+  color: #EE493B;
+}
 
 /* Add Tasks */
 app-add-task div.form-group {
@@ -451,7 +488,7 @@ app-settings .btn-primary {
 /* Mobile View */
 @media (max-width: 768px) {
   .content-container {
-    padding: 0 5% 30%;
+    padding: 0 5% 0%;
   }
   .col-sm-9 {
     width:100% !important;
