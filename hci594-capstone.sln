@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hci594-capstone", "hci594-capstone.csproj", "{518B9FD6-6219-49B3-94DD-A94BD8848EDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{518B9FD6-6219-49B3-94DD-A94BD8848EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518B9FD6-6219-49B3-94DD-A94BD8848EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518B9FD6-6219-49B3-94DD-A94BD8848EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518B9FD6-6219-49B3-94DD-A94BD8848EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
