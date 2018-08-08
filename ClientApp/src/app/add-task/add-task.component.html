@@ -16,42 +16,50 @@
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted}">
       <label for="priorityLevel">Priority level</label>
       <select class="form-control" id="focusTimeSelect">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option>Lowest</option>
+        <option>Lower</option>
+        <option selected="selected">Medium</option>
+        <option>Higher</option>
+        <option>Highest</option>
       </select>
       <div *ngIf="f.submitted" class="help-block">Priority level is required</div>
     </div>
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted}">
       <label for="estimatedCompletionTime">Estimated time to complete</label>
       <div class="horizontal-slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="horizontal-slider" id="myRange">
-        <p>Value:
+        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="myRange">
+        <p>Minutes:
           <span id="demo"></span>
         </p>
       </div>
       <div *ngIf="f.submitted" class="help-block">Estimated time is required</div>
     </div>
     <div class="form-group">
-      <label for="focusTimeSelect">Focus time</label>
+      <label for="focusTimeSelect">Focus time (minutes)</label>
       <select class="form-control" id="focusTimeSelect">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
         <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option selected="selected">25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+        <option>55</option>
+        <option>60</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="breakTimeSelect">Break time</label>
+      <label for="breakTimeSelect">Break time (minutes)</label>
       <select class="form-control" id="breakTimeSelect">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option selected="selected">5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
       </select>
     </div>
     <div class="form-group sync-device">
@@ -65,11 +73,5 @@
   </form>
 </div>
 <script>
-  var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  output.innerHTML = slider.value;
 
-  slider.oninput = function () {
-    output.innerHTML = this.value;
-  }
 </script>
