@@ -384,6 +384,9 @@ app-add-task div.form-group.sync-device h2 {
   margin:0;
 }
 app-add-task div.form-group.sync-device .slider.round {
+  background-color: #ccc;
+}
+app-add-task div.form-group.sync-device .switch input:checked + .slider {
   background-color: #EE493B;
 }
 app-add-task div.form-group.sync-device .switch {
@@ -421,6 +424,9 @@ app-settings .switch {
   float: right;
 }
 app-settings .slider.round {
+  background-color: #ccc;
+}
+input:checked + .slider {
   background-color: #EE493B;
 }
 app-settings .form-group {
@@ -458,6 +464,9 @@ app-settings div.form-group.sync-device h2 {
   margin:0;
 }
 app-settings div.form-group.sync-device .slider.round {
+  background-color: #ccc;
+}
+app-settings div.form-group.sync-device .switch input:checked + .slider {
   background-color: #EE493B;
 }
 app-settings div.form-group.sync-device .switch {
@@ -540,7 +549,7 @@ app-settings .btn-primary {
 .splash-percent {
   color: #fff;
   position: fixed;
-  top: 50%;
+  top: 48%;
   width: 100%;
   font-size: 1.2em;
   font-weight: 100;
@@ -560,8 +569,8 @@ app-settings .btn-primary {
   border: 12px solid #B4261B;
   border-radius: 50%;
   border-top: 12px solid #eee;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -624,6 +633,8 @@ app-settings .btn-primary {
   display: block;
   font-size: 2.5em;
   font-weight: 700;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .current-focus-time {
@@ -652,12 +663,12 @@ app-settings .btn-primary {
 }
 .sync-successful-container h1 {
   color: #EE493B;
-  padding: 40px 0;
+  padding: 40px 0 16px;
 }
 .sync-successful-container .fa-check {
-  font-size: 8em;
+  font-size: 6em;
   color: #EE493B;
-  margin: 8px 0 50px;
+  margin: 8px 0 22px;
 }
 .sync-successful-container h3 {
   font-size: 1.2em;
