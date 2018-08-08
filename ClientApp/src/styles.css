@@ -73,6 +73,60 @@
     padding:0;
   }
 
+  /* Navigation Menu */
+  .navbar-inverse {
+    background-color: #EE493B !important;
+    border-color: #EE493B !important;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #fff !important;
+}
+.navbar-nav {
+  margin: 0 !important;
+}
+  .navbar-header {display:none;}
+  .navbar {margin-bottom: 0 !important;}
+  .main-nav[_ngcontent-c1] {bottom:0;top:unset !important;}
+
+  .nav>li:first-child {display:none !important;}
+  .nav>li {
+    display: inline-block !important;
+    width: 32%;
+    text-align: center;
+}
+.navbar-inverse .navbar-nav>li:nth-child(3)>a {
+  background-color: #B4261B !important;
+  border-radius: 58px;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 9999;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 70px;
+  width: 70px;
+  margin: -20px auto 0;
+}
+.navbar-inverse .navbar-nav>li:nth-child(3)>a .fas {
+  font-size: 1.4em;
+  display: block;
+  line-height: 48px;
+  height: 42px;
+  width: 42px;
+  overflow: hidden;
+}
+li.link-active[_ngcontent-c1] a[_ngcontent-c1], 
+li.link-active[_ngcontent-c1] a[_ngcontent-c1]:hover, 
+li.link-active[_ngcontent-c1] a[_ngcontent-c1]:focus {
+  background-color: transparent !important;
+  color: white;
+}
+.navbar-collapse {padding: 0 !important;}
+.collapse {display: unset !important;}
+.fa, .fas {
+  font-size: 1.8em;
+  display: block;
+}
+
   /* Home Styles */
   
   .home-logo-header {
@@ -164,7 +218,7 @@ app-home a.btn {
   background-color: #EE493B;
   text-align: center;
   padding: 30px 0px;
-  margin: 0 0 25px;
+  margin: 0 0 14px;
 }
 .content-header h1 {
   color: #fff;
@@ -184,10 +238,12 @@ app-home a.btn {
 }
 .motivational-quote p.title {
   font-weight: 600;
+  font-size: 0.9em;
+  margin: 12px 0 0;
 }
 .motivational-quote p.quote {
   color: #EE493B;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .todays-date {
   width:50%;
@@ -196,7 +252,7 @@ app-home a.btn {
 }
 .todays-date p {
   color: #EE493B;
-  font-size: 2.8em;
+  font-size: 2.4em;
 }
 .todays-tasks {
   background-color: #EE493B;
@@ -334,7 +390,7 @@ app-settings div.form-group.sync-device .slider.round {
   background-color: #EE493B;
 }
 app-settings div.form-group.sync-device .switch {
-  margin: 0 0 -6px 12px;
+  margin: 0 0 -14px 12px;
   float: unset;
 }
 app-settings .btn-primary {
@@ -349,11 +405,53 @@ app-settings .btn-primary {
   font-size: 1.5em;
   font-weight: 400;
 }
+/* Slider */
+.horizontal-slidecontainer {
+  width: 100%;
+  margin: 28px 0 0 0;
+}
+.horizontal-slidecontainer p {
+  margin: 28px 0 0 0;
+}
 
+.horizontal-slider {
+  -webkit-appearance: none;
+  height: 6px !important;
+  background: #EE492B;
+  outline: none;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  padding: 0px !important;
+  border-bottom: unset !important;
+}
+
+.horizontal-slider:hover {
+  opacity: 1;
+}
+
+.horizontal-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 5px solid #EE492B;
+  cursor: pointer;
+}
+
+.horizontal-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
 /* Mobile View */
 @media (max-width: 768px) {
   .content-container {
-    padding: 0 5%;
+    padding: 0 5% 30%;
   }
   .col-sm-9 {
     width:100% !important;
@@ -371,7 +469,8 @@ app-settings .btn-primary {
   }
   app-add-task div.form-group.sync-device h2,
   app-settings div.form-group.sync-device h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 0px 0 12px 0;
   }
   app-add-task .btn-primary,
   app-settings .btn-primary {
