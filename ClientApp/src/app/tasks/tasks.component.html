@@ -11,14 +11,14 @@
     </div>
 
     <div class="todays-date">
-      <p>Thursday, July 26</p>
+      <p>Wednesday,<br>Aug 8</p>
     </div>
   </div>
 
   <h2 class="todays-tasks">Today's Tasks</h2>
 
   <div class="edit-tasks">
-      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+      <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
   </div>
 
   <p *ngIf="!forecasts">
@@ -28,12 +28,12 @@
   <div class="task-list">
       <div class="task-list-name">
         <i class="fa fa-bars" aria-hidden="true"></i>
-        <h3>Create Price Quotation</h3>
-        <span class="estimated-time">Estimated Time: 1hr</span>
-        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i> </span>
+        <h3>Do HomeWork 1</h3>
+        <span class="estimated-time">Estimated Time: 5 min</span>
+        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i> </span>
       </div>
       <div class="task-list-start-button">
-          <button class="btn btn-primary">Start Task</button>
+          <button class="btn btn-primary" [routerLink]='[ "/current-task"]'>Start Task</button>
       </div>
   </div>
 
@@ -42,22 +42,22 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
         <h3>Create Price Quotation</h3>
         <span class="estimated-time">Estimated Time: 1hr</span>
-        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i> </span>
+        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i> </span>
       </div>
       <div class="task-list-start-button">
-          <button class="btn btn-primary">Start Task</button>
+          <button class="btn btn-primary" [routerLink]='[ "/current-task"]'>Start Task</button>
       </div>
   </div>
 
   <div class="task-list">
       <div class="task-list-name">
         <i class="fa fa-bars" aria-hidden="true"></i>
-        <h3>Create Price Quotation</h3>
-        <span class="estimated-time">Estimated Time: 1hr</span>
-        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i> </span>
+        <h3>Send follow up email</h3>
+        <span class="estimated-time">Estimated Time: 5 mins</span>
+        <span class="priority-level">PRIORITY LEVEL: <i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i> </span>
       </div>
       <div class="task-list-start-button">
-          <button class="btn btn-primary">Start Task</button>
+          <button class="btn btn-primary" [routerLink]='[ "/current-task"]'>Start Task</button>
       </div>
   </div>
 
