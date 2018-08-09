@@ -493,6 +493,10 @@ app-settings .btn-primary {
 .horizontal-slidecontainer p {
   margin: 28px 0 0 0;
 }
+.horizontal-slidecontainer input[type=range] {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .horizontal-slider {
   -webkit-appearance: none;
