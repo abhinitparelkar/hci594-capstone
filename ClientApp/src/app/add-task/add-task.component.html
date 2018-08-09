@@ -28,12 +28,12 @@
       <label for="estimatedCompletionTime">Estimated time to complete</label>
       <div class="horizontal-slidecontainer">
         <div class="slider-minutes">
-          <p class="min-minutes">5</p>
-          <p class="max-minutes">60</p>
+          <p class="min-minutes">15</p>
+          <p class="max-minutes">180</p>
         </div>
-        <input type="range" min="30" max="180" value="30" step="15" class="horizontal-slider" id="estimatedTime">
+        <input type="range" min="15" max="180" value="15" step="15" class="horizontal-slider" id="estimatedTime" (change)="setEstimatedTime(estimatedTime)" name="estimatedCompletionTime" [(ngModel)]="estimatedTime">
         <p>Minutes:
-          <span id="demo-text"></span>
+          <span id="demo-text">{{estimatedTime}}</span>
         </p>
       </div>
       <div *ngIf="f.submitted" class="help-block">Estimated time is required</div>

@@ -9,7 +9,9 @@ import { NavMenuService } from '../services/nav-menu.service';
 export class AddTaskComponent implements OnInit {
   estimatedTime: number;
 
-  constructor(public nav: NavMenuService) { }
+  constructor(public nav: NavMenuService) { 
+    this.estimatedTime = 15;
+  }
 
   ngOnInit(): void {
     this.nav.hide();
