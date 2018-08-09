@@ -281,7 +281,11 @@ app-home a.btn {
   margin: 12px 0 20px 0;
   color: #999;
 }
-.edit-tasks a {color: #999;}
+.edit-tasks a {
+  color: #999;
+  font-size: 0.6em;
+  font-weight: 100;
+}
 .task-list {
   border-bottom: 1px solid #999;
   display: inline-block;
@@ -497,6 +501,26 @@ app-settings .btn-primary {
   width: 80%;
   margin: 0 auto;
 }
+.horizontal-slidecontainer .slider-minutes {
+  width: 100%;
+  display: inline;
+}
+.horizontal-slidecontainer .slider-minutes p {
+  width: 10%;
+  display: inline;
+  margin: -9px 0 0 0;
+  color: #EE493B;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.horizontal-slidecontainer .slider-minutes p.min-minutes {
+  float:left;
+  text-align: center;
+}
+.horizontal-slidecontainer .slider-minutes p.max-minutes {
+  float:right;
+  text-align: right;
+}
 
 .horizontal-slider {
   -webkit-appearance: none;
@@ -552,12 +576,11 @@ app-settings .btn-primary {
 }
 .splash-percent {
   color: #fff;
-  position: fixed;
-  top: 48%;
   width: 100%;
   font-size: 1.2em;
   font-weight: 100;
   line-height: 40px;
+  margin: 138px 0 0 0;
 }
 .splash-percent span {
   display: block;
@@ -565,11 +588,8 @@ app-settings .btn-primary {
   font-weight: 700;
 }
 #loader {
-  position: absolute;
-  left: 42%;
-  top: 48%;
   z-index: 1;
-  margin: -75px 0 0 -75px;
+  margin: -150px auto 0 auto;
   border: 12px solid #B4261B;
   border-radius: 50%;
   border-top: 12px solid #eee;
@@ -670,9 +690,9 @@ app-settings .btn-primary {
   padding: 40px 0 16px;
 }
 .sync-successful-container .fa-check {
-  font-size: 6em;
+  font-size: 7em;
   color: #EE493B;
-  margin: 8px 0 22px;
+  margin: 18px 0 42px;
 }
 .sync-successful-container h3 {
   font-size: 1.2em;
